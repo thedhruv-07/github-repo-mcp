@@ -74,9 +74,10 @@ server.registerTool(
   {
     title: "Ask Repo",
     description:
-      "Answers a free-text question about a repo by retrieving relevant excerpts from its " +
-      "README. Use this for questions the other structured tools can't answer directly, " +
-      "e.g. 'does this support TypeScript?' or 'how do I configure X?'",
+      "Answers a free-text question about a repo via embeddings-based semantic search over " +
+      "its README, docs/*.md, and top issue threads. Use this for questions the other " +
+      "structured tools can't answer directly, e.g. 'does this support TypeScript?' or " +
+      "'how do I configure X?' Requires VOYAGE_API_KEY and QDRANT_URL/QDRANT_API_KEY to be set.",
     inputSchema: {
       ...repoArgs,
       query: z.string().describe("The question to answer about this repo"),
