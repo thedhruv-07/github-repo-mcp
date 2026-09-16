@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.thedhruv-07/github-repo-mcp",
+  "description": "MCP server exposing repo health scoring, commit summaries, good-first-issue triage, and embeddings-based RAG Q&A over any public GitHub repository.",
+  "repository": {
+    "url": "https://github.com/thedhruv-07/github-repo-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@thedhruv07/github-repo-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GITHUB_TOKEN",
+          "description": "GitHub personal access token (classic, no scopes needed for public repos). Raises the rate limit from 60/hr to 5000/hr. https://github.com/settings/tokens",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "VOYAGE_API_KEY",
+          "description": "Voyage AI API key, required for ask_repo's embeddings. Free tier at https://dashboard.voyageai.com/",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "QDRANT_URL",
+          "description": "Qdrant Cloud cluster URL, required for ask_repo's vector storage. Free tier at https://cloud.qdrant.io/",
+          "isRequired": true,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "QDRANT_API_KEY",
+          "description": "API key for your Qdrant Cloud cluster.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

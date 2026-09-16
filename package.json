@@ -1,9 +1,14 @@
 {
-  "name": "github-repo-mcp",
+  "name": "@thedhruv07/github-repo-mcp",
   "version": "0.1.0",
   "description": "MCP server exposing repo health, commit summaries, good-first-issue triage, and RAG-based Q&A over any public GitHub repository.",
+  "mcpName": "io.github.thedhruv-07/github-repo-mcp",
   "type": "module",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thedhruv-07/github-repo-mcp.git"
+  },
   "bin": {
     "github-repo-mcp": "build/index.js"
   },
