@@ -1,0 +1,27 @@
+{
+  "name": "github-repo-mcp",
+  "version": "0.1.0",
+  "description": "MCP server exposing repo health, commit summaries, good-first-issue triage, and RAG-based Q&A over any public GitHub repository.",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "github-repo-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["mcp", "github", "ai-agent", "model-context-protocol"],
+  "author": "Dhruv Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "typescript": "^7.0.2"
+  }
+}
