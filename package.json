@@ -7,7 +7,7 @@
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thedhruv-07/github-repo-mcp.git"
+    "url": "git+https://github.com/thedhruv-07/github-repo-mcp.git"
   },
   "bin": {
     "github-repo-mcp": "build/index.js"
@@ -17,7 +17,12 @@
     "start": "node build/index.js",
     "dev": "tsc --watch"
   },
-  "keywords": ["mcp", "github", "ai-agent", "model-context-protocol"],
+  "keywords": [
+    "mcp",
+    "github",
+    "ai-agent",
+    "model-context-protocol"
+  ],
   "author": "Dhruv Kumar",
   "license": "MIT",
   "dependencies": {
