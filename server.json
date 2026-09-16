@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.thedhruv-07/github-repo-mcp",
-  "description": "MCP server exposing repo health scoring, commit summaries, good-first-issue triage, and embeddings-based RAG Q&A over any public GitHub repository.",
+  "description": "MCP server for GitHub repo health, commit summaries, issue triage, and RAG Q&A.",
   "repository": {
     "url": "https://github.com/thedhruv-07/github-repo-mcp",
     "source": "github"
