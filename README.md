@@ -63,6 +63,12 @@ facebook/react and find me a good first issue."*
   security), and comment count to catch issues that are mislabeled, not just present them
   at face value.
 
+## Demo
+
+See [docs/demo.md](docs/demo.md) for a real (not mocked) protocol exchange against
+`facebook/react`, including the embeddings-based `ask_repo` retrieving the correct
+answer for a query that shares no words with the source text.
+
 ## How `ask_repo` retrieval works
 
 `ask_repo` started as keyword-window retrieval over the README (see git history) and
